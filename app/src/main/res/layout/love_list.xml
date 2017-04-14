@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/loveProfileBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/loveImageProfile"
+            android:padding="2dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/loveImageProfile"
+            android:layout_width="wrap_content"
+            android:padding="2dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingLeft="5dp"
+                android:textStyle="bold"
+                android:text="Nama"/>
+
+            <TextView
+                android:id="@+id/textViewRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:paddingLeft="5dp"
+                android:text="Harga"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#BDBDBD"
+        android:layout_below="@id/loveProfileBox"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp">
+    </RelativeLayout>
+
+</LinearLayout>
